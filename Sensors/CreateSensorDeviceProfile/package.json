@@ -1,0 +1,31 @@
+{
+  "name": "database-service",
+  "version": "1.0.0",
+  "description": "database service soa-eews",
+  "main": "db_service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meelosh9/SOA-EEWS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meelosh9/SOA-EEWS/issues"
+  },
+  "homepage": "https://github.com/meelosh9/SOA-EEWS#readme",
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.33.2",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.3.10",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "formdata-node": "^5.0.0",
+    "uuid": "^9.0.0"
+  },
+  "type": "module"
+}

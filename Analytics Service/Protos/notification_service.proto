@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package notification;
+
+import "google/protobuf/empty.proto";
+
+service Notification {
+    rpc SendNotification (NotificationRequest) returns (google.protobuf.Empty) {}
+}
+
+message NotificationRequest {
+  string Date = 1;
+  string Time = 2;
+  double Latitude = 3;
+  double Longitude = 4;
+  string Type = 5;
+  double Depth = 6;
+  double Magnitude = 7;
+  string MagnitudeType = 8;
+  string ID = 9;
+}

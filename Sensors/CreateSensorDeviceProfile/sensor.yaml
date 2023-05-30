@@ -1,0 +1,57 @@
+name: SeismicSensor
+manufacturer: Elektronska Industrija Nis
+description: Senzor za detekciju pomeraja
+model: Some 3rd party app sending JSON
+labels: [rest json]
+
+deviceResources:
+    - name: station
+      description: Station name
+      properties:
+        valueType: string
+        readWrite: R
+    - name: event_id
+      description: ID of the event
+      properties:
+        valueType: float64
+        readWrite: R
+    - name: event_time
+      description: Time of the event
+      properties:
+        valueType: string
+        readWrite: R
+    - name: event_magnitude
+      description: Magnitude
+      properties:
+        valueType: float32
+        readWrite: R
+    - name: event_longitude
+      description: Longitude
+      properties:
+        valueType: float64
+        readWrite: R
+    - name: event_latitude
+      description: Latitude
+      properties:
+        valueType: float64
+        readWrite: R
+    - name: event_depth
+      description: Depth
+      properties:
+        valueType: float64
+        readWrite: R
+    - name: dimension_n
+      description: N component
+      properties:
+        valueType: float64
+        readWrite: R
+    - name: dimension_e
+      description: E component
+      properties:
+        valueType: float64
+        readWrite: R
+    - name: dimension_z
+      description: Z component
+      properties:
+        valueType: float64
+        readWrite: R

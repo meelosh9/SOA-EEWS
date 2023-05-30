@@ -1,0 +1,59 @@
+dbtimestamp:
+  created: 1683819123568
+  modified: 1683830219829
+id: 8da203d1-1943-4a23-bc6a-f2eede346e37
+name: Alarm
+manufacturer: Elektronska Industrija Nis
+description: Alarm device profile
+model: A-01
+labels: [alarm, mqtt]
+deviceResources:
+- description: Station name
+  name: station
+  isHidden: false
+  tag: ""
+  properties:
+    valueType: String
+    readWrite: RW
+    units: ""
+    minimum: ""
+    maximum: ""
+    defaultValue: ""
+    mask: ""
+    shift: ""
+    scale: ""
+    offset: ""
+    base: ""
+    assertion: ""
+    mediaType: ""
+  attributes: {}
+- description: Is alarm on or off
+  name: state
+  isHidden: false
+  tag: ""
+  properties:
+    valueType: String
+    readWrite: RW
+    units: ""
+    minimum: ""
+    maximum: ""
+    defaultValue: ""
+    mask: ""
+    shift: ""
+    scale: ""
+    offset: ""
+    base: ""
+    assertion: ""
+    mediaType: ""
+  attributes: {}
+deviceCommands:
+- name: values
+  isHidden: false
+  readWrite: R
+  resourceOperations:
+  - deviceResource: station
+    defaultValue: ""
+    mappings: {}
+  - deviceResource: state
+    defaultValue: ""
+    mappings: {}

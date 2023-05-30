@@ -1,0 +1,47 @@
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\appsettings.json
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\Visualisation Service.exe
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\Visualisation Service.deps.json
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\Visualisation Service.runtimeconfig.json
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\Visualisation Service.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\Visualisation Service.pdb
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\InfluxDB.Client.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\InfluxDB.Client.Core.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\JsonSubTypes.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\MQTTnet.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\NodaTime.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\NodaTime.Serialization.JsonNet.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\RestSharp.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\System.Reactive.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.csproj.AssemblyReference.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.AssemblyInfoInputs.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.AssemblyInfo.cs
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.csproj.CoreCompileInputs.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\scopedcss\bundle\Visualisation Service.styles.css
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.csproj.CopyComplete
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\refint\Visualisation Service.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.pdb
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\Visualisation Service.genruntimeconfig.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Visualisation Service\obj\Debug\net6.0\ref\Visualisation Service.dll

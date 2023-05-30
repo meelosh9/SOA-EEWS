@@ -1,0 +1,29 @@
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.csproj.AssemblyReference.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.AssemblyInfoInputs.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.AssemblyInfo.cs
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.csproj.CoreCompileInputs.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\appsettings.json
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Gateway service.exe
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Gateway service.deps.json
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Gateway service.runtimeconfig.json
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Gateway service.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Gateway service.pdb
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\scopedcss\bundle\Gateway service.styles.css
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.csproj.CopyComplete
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\refint\Gateway service.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.pdb
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\Gateway service.genruntimeconfig.cache
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\obj\Debug\net6.0\ref\Gateway service.dll
+C:\Users\Ekonomski\Desktop\SOA proj\Gateway service\bin\Debug\net6.0\MQTTnet.dll
