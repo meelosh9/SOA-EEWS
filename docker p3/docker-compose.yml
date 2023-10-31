@@ -497,15 +497,15 @@ services:
     ports:
       - "5000:5000"
     depends_on:
-      - "mongodb"
+      - mongodb
     networks:
       edgex-network: {}
   gateway_service:
     container_name: gateway_service
     build: ../Gateway Service
     depends_on:
-      - "database_service"
-      - "mqtt"
+      - database_service
+      - mqtt
     networks:
       edgex-network: {}
   manager:
@@ -535,25 +535,29 @@ services:
          KUIPER__BASIC__CONSOLELOG: "true"
          KUIPER__BASIC__IGNORECASE: "false"
     depends_on:
-      - "mqtt"
+      - mqtt
     networks:
       edgex-network: {}      
   analytics_service:
     container_name: analytics_service
     build: ../Analytics Service
     depends_on:
-      - "ekuiper"
-      - "influx"
-      - "mqtt"
-      - "notification_service"
+      - ekuiper
+      - influx
+      - mqtt
+      - notification_service
+      - gateway_service
     networks:
       edgex-network: {}
   monitoring_service:
     container_name: monitoring_service
     build: ../Monitoring service
+    ports:
+      - "3301:3301"
     depends_on:
-      - "influx"
-      - "mqtt"
+      - mqtt
+      - ekuiper
+      - metadata
     networks:
       edgex-network: {}
   notification_service:
@@ -562,36 +566,49 @@ services:
     ports:
       - "50052:50052"
     depends_on:
-      - "ekuiper"
+      - ekuiper
+      - metadata
     networks:
       edgex-network: {}  
   visualisation_service:
     container_name: visualisation_service
     build: ../Visualisation Service
     depends_on:
-      - "influx"
-      - "grafana"
-      - "mqtt"
+      - influx
+      - grafana
+      - mqtt
     networks:
       edgex-network: {}
   sensor_profile:
     container_name: sensorProfile
     build: ../Sensors/CreateSensorDeviceProfile
+    depends_on:
+      - metadata
     networks:
       edgex-network: {}
   sensor:
     container_name: sensor
-    build: ../Sensors/CreateSensorsAndSendData
+    build: ../Sensors/CreateSensorsAndSendData 
+    depends_on:
+    - sensor_profile
+    - monitoring_service
     networks:
       edgex-network: {}
   device_profile:
     container_name: deviceProfile
     build: ../Devices/CreateActuatorDeviceProfile
+    depends_on:
+      - metadata
     networks:
       edgex-network: {}
   device:
     container_name: device
     build: ../Devices/CreateActuators
+    depends_on:
+    - device_profile
+    - monitoring_service
+    ports:
+      - "3300:3300"
     networks:
       edgex-network: {}
 version: '3.7'

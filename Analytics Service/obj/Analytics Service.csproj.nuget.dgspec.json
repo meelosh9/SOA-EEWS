@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj": {}
+    "C:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj": {
+    "C:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj",
+        "projectUniqueName": "C:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj",
         "projectName": "Analytics Service",
-        "projectPath": "c:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj",
+        "projectPath": "C:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj",
         "packagesPath": "C:\\Users\\Ekonomski\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\obj\\",
+        "outputPath": "C:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ekonomski\\AppData\\Roaming\\NuGet\\NuGet.Config",

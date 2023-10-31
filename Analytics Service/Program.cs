@@ -10,10 +10,13 @@ namespace AnalyticsService
         {
 
             var httpClient = new HttpClient();
+            
             httpClient.BaseAddress = new Uri("http://ekuiper:9081");
 
-            await eKuiperService.ConfigureStream(httpClient);
-            await eKuiperService.ConfigureQuery(httpClient);
+            await eKuiperService.ConfigureStreamApiInput(httpClient);
+            await eKuiperService.ConfigureStreamSensorInput(httpClient);
+            await eKuiperService.ConfigureQueryApiInput(httpClient);
+            await eKuiperService.ConfigureQuerySensorInput(httpClient);
 
 
             await Host.CreateDefaultBuilder(args).ConfigureServices(async services =>

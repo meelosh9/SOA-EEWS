@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/SZeVgrcpW3k3KTrkrnONlxz4UG1duL23F6zcVH37lXO6t96euhOnlMPDFlKVdIP+soyTu8cAU4EV/ygVcXyCg==",
+  "dgSpecHash": "SJAKmjX3ccOaFCRzq2A6iyedVi1imCOiAxlzH4Nkv5rDjUEVXv3V9mBlPA7SIqrsDzymy5RAqGvNudbq/3HufQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj",
+  "projectFilePath": "C:\\Users\\Ekonomski\\Desktop\\SOA proj\\Analytics Service\\Analytics Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ekonomski\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\Ekonomski\\.nuget\\packages\\google.protobuf\\3.22.3\\google.protobuf.3.22.3.nupkg.sha512",

@@ -11,7 +11,7 @@ namespace Visualisation_Service
         public string valueType { get; set; }
         public object binaryValue { get; set; }
         public string mediaType { get; set; }
-        public string value { get; set; }
+        public dynamic  value { get; set; }
     }
 
     public class SensorData
