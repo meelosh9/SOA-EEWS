@@ -503,9 +503,14 @@ services:
   gateway_service:
     container_name: gateway_service
     build: ../Gateway Service
+    ports:
+      - "6161:80"
+      - "6162:443"
     depends_on:
       - database_service
       - mqtt
+    environment:
+      - ASPNETCORE_ENVIRONMENT="Development"
     networks:
       edgex-network: {}
   manager:
@@ -611,6 +616,13 @@ services:
       - "3300:3300"
     networks:
       edgex-network: {}
+  webapp:
+    container_name: webapp
+    build: ../WebMap/
+    ports:
+      - "5151:5173"
+    networks:
+      edgex-network: {}    
 version: '3.7'
 volumes:
   consul-config: {}

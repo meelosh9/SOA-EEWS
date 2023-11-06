@@ -64,7 +64,7 @@ namespace AnalyticsService
                 Console.WriteLine(e.Message);
             }
         }
-                public async static Task ConfigureQuerySensorInput(HttpClient httpClient)
+        public async static Task ConfigureQuerySensorInput(HttpClient httpClient)
         {
             try
             {

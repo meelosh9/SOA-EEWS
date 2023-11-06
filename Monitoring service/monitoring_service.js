@@ -1,8 +1,7 @@
 import mqtt from 'mqtt'
 import axios from 'axios'
 import { v4 as uuidv4 } from 'uuid';
-
-import WebSocket, { WebSocketServer } from 'ws';
+import { WebSocketServer } from 'ws';
 
 const WEB_SOCKET_PORT_CUSTOMER = 3301;
 const ws = new WebSocketServer({ port: WEB_SOCKET_PORT_CUSTOMER });
@@ -37,7 +36,7 @@ const getAlarmsMQTT = async () => {
 //     }
 //     return alarms
 // }
-function calcCrow(lat1, lon1, lat2, lon2) {
+function haversine(lat1, lon1, lat2, lon2) {
     if ((lat1 == lat2) && (lon1 == lon2)) {
         return 0;
     }
@@ -147,22 +146,22 @@ client.on('message', function (topic, message) {
         //         axios.put(url, { Active: false }).catch()
         //     }, 10000)
         // })
-        // try {
-        //     let url = `http:/database_service:5000/api/earthquake/AddEarthquake`
-        //     let body = {
-        //         date: new Date(),
-        //         time: new Date(),
-        //         latitude: values.latitude,
-        //         longitude: values.longitude,
-        //         type: "Earthquake",
-        //         depth: values.depth,
-        //         magnitude: values.magnitude,
-        //         magnitudeType: "MW",
-        //         id: uuidv4()
-        //     }
-        //     axios.post(url, body)
-        // } catch (error) {
-        // }
+        try {
+            let url = `http://database_service:5000/api/earthquake/AddEarthquake`
+            let body = {
+                date: new Date(),
+                time: new Date(),
+                latitude: values.latitude,
+                longitude: values.longitude,
+                type: "Earthquake",
+                depth: values.depth,
+                magnitude: values.magnitude,
+                magnitudeType: "MW",
+                id: uuidv4()
+            }
+            axios.post(url, body)
+        } catch (error) {
+        }
 
     }
 })

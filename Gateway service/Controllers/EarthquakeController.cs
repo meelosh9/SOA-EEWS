@@ -70,7 +70,7 @@ namespace Gateway_service.Controllers
             }
             catch (Exception e)
             {
-                return StatusCode(500, "An error has occured.");
+                return StatusCode(500, e.ToString());
             }
         }
         [HttpGet("GetEarthquakesInArea")]

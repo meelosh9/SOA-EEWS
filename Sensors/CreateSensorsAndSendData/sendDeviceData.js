@@ -1,10 +1,9 @@
 import fs from "fs";
-import { parse } from "csv-parse";
 import axios from 'axios'
+import { parse } from "csv-parse";
 import { v4 as uuidv4 } from "uuid";
 
 const Write = (data, delay) => {
-  
   let origin = parseInt(data.timestamp)
   let url = `http://edgex-core-data:59880/api/v2/event/SeismicSensor/${data.station}/${data.station}`
   let requiestID = uuidv4()
@@ -89,15 +88,12 @@ const Write = (data, delay) => {
 
     }
   }
-
   setTimeout(() => {
-    console.log(delay,data.station)
+    console.log(delay, data.station)
     axios.post(url, body, {
       headers: { 'X-Corelation-ID': requiestID },
     }).then((res) => {
-      // console.log(res.data);
     }).catch((error) => {
-      // console.error(error)
     })
   }, delay);
 }

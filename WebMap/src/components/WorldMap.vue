@@ -1,10 +1,27 @@
 <template>
   <body>
-    <a v-mdb-ripple="{ color: 'light', radius: 25 }">
-      <img alt="example" id="map" class="img-fluid rounded" width="1000"
-      src="https://miro.medium.com/v2/resize:fit:2400/format:webp/1*OaEjVmZCTgmVeAE68VFS8w.jpeg"
-      margin: auto />
-    </a>
+    <div class="earthquakes rounded">
+      <div>Aktivni zemljotresi:</div>
+      <div v-for="item in earthquakes" :key="item">
+        <div class="earthquake rounded">
+          {{ "Latitude: " + item.latitude + " Longitude: " + item.longitude }}
+        </div>
+      </div>
+    </div>
+    <img alt="example" id="map" class="img-fluid rounded"
+    src="https://miro.medium.com/v2/resize:fit:2400/format:webp/1*OaEjVmZCTgmVeAE68VFS8w.jpeg"
+    margin: auto />
+    <div class="alarms rounded">
+      <div>Aktivni alarmi:</div>
+      <div v-for="item in stationObj" :key="item.name">
+        <div class="alarmOn  rounded" v-if="item.state == 'On'">
+          {{ item.name + " " + item.state }}
+        </div>
+        <div class="alarmOff rounded" v-else>
+          {{ item.name + " " + item.state }}
+        </div>
+      </div>
+    </div>
   </body>
 </template>
 
@@ -85,7 +102,19 @@ export default {
   },
 
   data() {
-    return {};
+    return {
+      earthquakes: [],
+      stations: [],
+      stationObj: {},
+    };
+  },
+  computed: {
+    earthquakes() {
+      return this.earthquakes;
+    },
+    stations() {
+      return this.stations;
+    },
   },
   created() {
     this.createConnectionEarthquakes();
@@ -94,12 +123,18 @@ export default {
   methods: {
     initData() {},
     createConnectionStations() {
-      try {   
+      try {
         const wsStations = new WebSocket("ws://localhost:3300"); //TODO Device
         wsStations.onopen = async () => {};
         wsStations.onmessage = async (event) => {
           let message = JSON.parse(event.data);
           console.log(message);
+          this.stations.push(message);
+          this.stationObj[message.name] = {
+            state: message.state,
+            name: message.name,
+          };
+          console.log(this.stationObj);
           drawStation(
             message.location.lat,
             message.location.long,
@@ -121,7 +156,10 @@ export default {
         wsEarthquakes.onopen = async () => {};
         wsEarthquakes.onmessage = async (event) => {
           let message = JSON.parse(event.data);
-          console.log(message);
+          this.earthquakes.push(message);
+          setTimeout(() => {
+            this.earthquakes.pop(message);
+          }, 10000);
           Number.parseFloat();
           drawEarthquareSource(
             Number.parseFloat(message.latitude),
@@ -146,5 +184,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+img {
+  width: 50vw;
+}
+.alarms {
+  background-color: grey;
+  height: 80vh;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  margin: 30px;
+}
+
+.alarmOff {
+  width: 7vw;
+  text-align: center;
+  background-color: red;
+  margin: 10px;
+}
+.alarmOn {
+  width: 7vw;
+  text-align: center;
+  background-color: red;
+  margin: 10px;
+  background-color: rgb(0, 255, 21);
+}
+.earthquakes {
+  background-color: grey;
+  height: 80vh;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 30px;
+}
+.earthquake {
+  text-align: center;
+  text-decoration-color: black;
+  background-color: rgb(205, 205, 205);
+  margin: 10px;
+  width: 7vw;
 }
 </style>

@@ -30,7 +30,7 @@
         public string? Name { get; set; }
 
         [JsonProperty("number")]
-        public double? Number { get; set; }
+        public string? Number { get; set; }
 
         [JsonProperty("postal_code")]
         public string? PostalCode { get; set; }

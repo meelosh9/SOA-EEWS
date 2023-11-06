@@ -11,7 +11,7 @@ const createDeviceProfile = async () => {
       "apiVersion": "v2",
       "profile": {
         "name": "Alarm",
-        "manufacturer": "Elektronska Industrija Nis",
+        "manufacturer": "Manufacturer",
         "model": "A-01",
         "labels": [
           "modbus"
