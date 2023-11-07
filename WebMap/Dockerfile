@@ -1,6 +1,6 @@
 FROM node:lts-alpine as build-npm-stage
 
-WORKDIR app
+WORKDIR /app
 COPY package.json ./
 RUN npm install
 COPY . .

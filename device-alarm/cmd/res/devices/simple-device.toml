@@ -1,0 +1,17 @@
+[[DeviceList]]
+  Name = 'Alarm-Device01'
+  ProfileName = 'Alarm-Device'
+  Description = 'Example of Alarm Device'
+  Labels = [ 'industrial' ]
+  [DeviceList.Protocols]
+  [DeviceList.Protocols.other]
+    Address = 'alarm01'
+    Port = '300'
+  [[DeviceList.AutoEvents]]
+    Interval = '10s'
+    OnChange = false
+    SourceName = 'State'
+  [[DeviceList.AutoEvents]]
+    Interval = '30s'
+    OnChange = false
+    SourceName = 'Info'

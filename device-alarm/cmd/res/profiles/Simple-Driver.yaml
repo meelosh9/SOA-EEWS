@@ -1,0 +1,53 @@
+apiVersion: "v2"
+name: "Alarm-Device"
+manufacturer: "Simple Corp."
+model: "AL-01"
+labels:
+  - "state"
+description: "Example of Alarm Device"
+
+deviceResources:
+  -
+    name: "Active"
+    isHidden: false
+    description: "Is alarm active."
+    properties:
+        valueType: "Bool"
+        readWrite: "RW"
+        defaultValue: "false"
+  -
+    name: "Longitude"
+    isHidden: true
+    description: "Longitude of device"
+    properties:
+        valueType: "Float32"
+        readWrite: "RW"
+  -
+    name: "Latitude"
+    isHidden: true
+    description: "Latitude of device"
+    properties:
+        valueType: "Float32"
+        readWrite: "RW"
+deviceCommands:
+  -
+    name: "State"
+    isHidden: false
+    readWrite: "R"
+    resourceOperations:
+      - { deviceResource: "Active" }
+  -
+    name: "Location"
+    isHidden: false
+    readWrite: "R"
+    resourceOperations:
+      - { deviceResource: "Longitude" }
+      - { deviceResource: "Latitude" }
+  -
+    name: "Info"
+    isHidden: false
+    readWrite: "RW"
+    resourceOperations:
+      - { deviceResource: "Longitude"}
+      - { deviceResource: "Latitude"}
+      - { deviceResource: "Active"}

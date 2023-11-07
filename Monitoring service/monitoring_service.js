@@ -60,7 +60,7 @@ function haversine(lat1, lon1, lat2, lon2) {
 const getAlarmsInRange = (latitude, longitude, alarms) => {
     let alarmsInRange = []
     alarms.forEach(alarm => {
-        var distance = calcCrow(latitude, longitude, alarm.location.lat, alarm.location.long)
+        var distance = haversine(latitude, longitude, alarm.location.lat, alarm.location.long)
         if (distance <= 1000) {
             alarmsInRange.push(alarm)
         }
